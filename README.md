@@ -27,4 +27,4 @@ _pip install scikit-learn pandas numpy_
 
 **Train the model:** A logistic regression model is trained using the specified features: credit_lines_outstanding, debt_to_income_ratio, payment_to_income_ratio, years_employed, and fico_score.
 
-**Calculate Expected Loss: **The calculate_expected_loss function calculates the expected financial loss based on the predicted probability of default for each loan.
+**Calculate Expected Loss:**The calculate_expected_loss function calculates the expected financial loss based on the predicted probability of default for each loan.
