@@ -4,7 +4,9 @@ import numpy as np
 import pandas as pd
 
 # load the dataset and prepare features
-data = pd.read_csv(r'C:\Users\rohan\Downloads\Task 3 and 4_Loan_Data.csv')
+file_path = input("Please enter the path to your CSV file: ") 
+data = pd.read_csv(file_path)
+
 attributes = ['credit_lines_outstanding', 'debt_to_income_ratio', 'payment_to_income_ratio', 'years_employed', 'fico_score']
 data['payment_to_income_ratio'] = data['loan_amt_outstanding'] / data['income']
 data['debt_to_income_ratio'] = data['total_debt_outstanding'] / data['income']
